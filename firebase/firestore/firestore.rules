@@ -16,7 +16,18 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    match /empresas/{parent}/fonteLeads/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
     match /{path=**}/leads/{document} {
+      allow read: if true;
+    }
+
+    match /{path=**}/fonteLeads/{document} {
       allow read: if true;
     }
 
