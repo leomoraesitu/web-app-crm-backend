@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "web-app-crm-dev"
-  }
+    "default": "web-app-crm-dev",
+    "dev": "web-app-crm-dev",
+    "prod": "web-app-crm-prod"
+  },
+  "targets": {},
+  "etags": {}
 }
